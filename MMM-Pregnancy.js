@@ -241,7 +241,7 @@ Module.register("MMM-Pregnancy", {
     duedate.setTime(ovulation.getTime() + 266*86400000);
     this.pregnancyResults.duedate = this.dispDate(duedate);
 
-    var fetalage = 14 + 266 - ((duedate - today) / 86400000);
+    var fetalage = luteal + 266 - ((duedate - today) / 86400000);
     weeks = parseInt(fetalage / 7);
     days = Math.ceil(fetalage % 7);
 
